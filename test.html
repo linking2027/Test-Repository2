@@ -1,9 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>これはテストです．</title>
-</head>
-<body>
-  <h1>これはテストです．</h1>
-</body>
-</html>
+<style>
+  .foldable-content1 {
+      text-indent: 17px;
+  }
+  .foldable-content2 {
+    text-indent: 34px;
+  }
+  .foldable-content3 {
+    text-indent: 51px;
+  }
+</style>
+
+<div class="foldable">
+<details>
+  <summary>詳細</summary>
+  <div class="foldable-content1">
+    さらに入れ子にしましょう。
+    <details>
+      <summary>詳細の詳細</summary>
+      <div class="foldable-content2">
+        さらに入れ子にしましょう。
+        <details>
+          <summary>詳細の詳細の詳細</summary>
+          <div class="foldable-content3">
+            たくさん入れ子にしてみました。
+          </div>
+        </details>
+      </div>
+    </details>
+  </div>
+</details>
+</div>
